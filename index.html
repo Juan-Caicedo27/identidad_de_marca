@@ -32,6 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 
+
+
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXQ59QSK"
@@ -65,9 +67,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <h1 class="display-4">Potencia tu setup con asesoría experta 🎮⚡</h1>
     <p class="lead">Elige mejor, ahorra dinero y lleva tu experiencia tecnológica al siguiente nivel.</p>
-
+    
+    <!--cta_click-->
     <a href="#formulario" class="btn btn-primary m-2">Empezar ahora</a>
-    <a href="#como" class="btn btn-outline-light m-2">Ver cómo funciona</a>
+    
+    <!--ver_como_click-->
+    <a href="#como" 
+        class="btn btn-outline-light m-2"
+        onclick="dataLayer.push({event:'ver_como_click'});">
+          Ver cómo funciona
+    </a>
+    
   </div>
 </section>
 
@@ -189,8 +199,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h3>¿Listo para mejorar tu setup?</h3>
     <p class="mb-4">Recibe recomendaciones personalizadas y optimiza tu experiencia tecnológica.</p>
 
-    <a href="#formulario" class="btn btn-primary me-2">
-      Empezar ahora
+    <a href="#formulario" 
+        class="btn btn-primary m-2"
+        onclick="dataLayer.push({event:'cta_click'});">
+          Empezar ahora
     </a>
 
     <a href="#beneficios" class="btn btn-outline-dark">
@@ -227,6 +239,44 @@ window.addEventListener("scroll", function(){
   }
 });
 </script>
+<!--scroll_50-->
+<script>
+let scroll50 = false;
+
+window.addEventListener('scroll', function() {
+  if (!scroll50 && (window.scrollY + window.innerHeight) / document.body.scrollHeight > 0.5) {
+    scroll50 = true;
+    dataLayer.push({
+      event: 'scroll_50'
+    });
+  }
+});
+</script>
+<!--form_view-->
+<script>
+const form = document.querySelector("#formulario");
+
+window.addEventListener("scroll", function(){
+  const rect = form.getBoundingClientRect();
+
+  if(rect.top < window.innerHeight && rect.bottom >= 0){
+    dataLayer.push({
+      event: "form_view"
+    });
+  }
+});
+</script>
+<!--form_submit-->
+<script>
+window.addEventListener("message", function(event) {
+  if(event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
+    dataLayer.push({
+      event: "form_submit"
+    });
+  }
+});
+</script>
+
 
 </body>
 </html>
