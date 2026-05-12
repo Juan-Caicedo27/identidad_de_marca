@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>TechNiche - Landing</title>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PXQ59QSK');</script>
-<!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PXQ59QSK');
+  </script>
+  <!-- End Google Tag Manager -->
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/tech.png">
@@ -28,21 +35,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- CSS propio -->
   <link rel="stylesheet" href="css/styles.css">
 
-
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-
 
 <body>
+
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXQ59QSK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXQ59QSK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
+
     <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
       <img src="img/tech.png" alt="Logo TechNiche" width="35" class="me-2">
       TechNiche
@@ -60,34 +70,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
       </ul>
     </div>
+
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="bg-dark text-white text-center">
+<section class="bg-dark text-white text-center py-5">
   <div class="container">
-    <h1 class="display-4">Potencia tu setup con asesoría experta 🎮⚡</h1>
-    <p class="lead">Elige mejor, ahorra dinero y lleva tu experiencia tecnológica al siguiente nivel.</p>
-    
-    <!--cta_click-->
-    <a href="#formulario" class="btn btn-primary m-2">Empezar ahora</a>
-    
-    <!--ver_como_click-->
-    <a href="#como" 
-        class="btn btn-outline-light m-2"
-        onclick="dataLayer.push({event:'ver_como_click'});">
-          Ver cómo funciona
+
+    <h1 class="display-4">
+      Potencia tu setup con asesoría experta 🎮⚡
+    </h1>
+
+    <p class="lead">
+      Elige mejor, ahorra dinero y lleva tu experiencia tecnológica al siguiente nivel.
+    </p>
+
+    <a href="#subscribeForm" class="btn btn-primary m-2">
+      Empezar ahora
     </a>
-    
+
+    <a href="#como"
+      class="btn btn-outline-light m-2"
+      onclick="dataLayer.push({event:'ver_como_click'});">
+      Ver cómo funciona
+    </a>
+
   </div>
 </section>
 
 <!-- BENEFICIOS -->
 <section id="beneficios" class="py-5">
   <div class="container text-center">
+
     <h2>¿Por qué elegir TechNiche?</h2>
 
     <div class="row mt-4">
+
       <div class="col-md-3">
         <i class="bi bi-cash display-4 text-primary"></i>
         <p>Ahorra dinero evitando malas compras</p>
@@ -107,22 +126,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="bi bi-controller display-4 text-primary"></i>
         <p>Optimiza tu setup gamer</p>
       </div>
+
     </div>
+
   </div>
 </section>
 
 <!-- CTA -->
 <section class="bg-dark text-white text-center py-4">
+
   <h4>🔥 Más de 500 usuarios ya mejoraron su setup</h4>
-  <a href="#formulario" class="btn btn-primary mt-2">Quiero mejorar el mío</a>
+
+  <a href="#subscribeForm" class="btn btn-primary mt-2">
+    Quiero mejorar el mío
+  </a>
+
 </section>
 
 <!-- COMO FUNCIONA -->
 <section id="como" class="py-5 bg-light">
+
   <div class="container text-center">
+
     <h2>¿Cómo funciona?</h2>
 
     <div class="row mt-4">
+
       <div class="col-md-4">
         <h4>1️⃣</h4>
         <p>Cuéntanos qué necesitas</p>
@@ -137,16 +166,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h4>3️⃣</h4>
         <p>Recibes tu recomendación</p>
       </div>
+
     </div>
+
   </div>
+
 </section>
 
 <!-- TESTIMONIOS -->
 <section id="testimonios" class="py-5 text-center">
+
   <div class="container">
+
     <h2>Lo que dicen nuestros usuarios</h2>
 
     <div class="row mt-4">
+
       <div class="col-md-4">
         <p>"Armé mi PC sin gastar de más"</p>
         ⭐⭐⭐⭐⭐
@@ -161,69 +196,100 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>"Explican todo súper claro"</p>
         ⭐⭐⭐⭐⭐
       </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- CTA 2 -->
+<!-- CTA -->
 <section class="bg-dark text-white text-center py-4">
+
   <h4>🚀 No pierdas tiempo buscando, nosotros te guiamos</h4>
-  <a href="#formulario" class="btn btn-primary mt-2">Empieza gratis</a>
+
+  <a href="#subscribeForm" class="btn btn-primary mt-2">
+    Empieza gratis
+  </a>
+
 </section>
 
 <!-- FAQ -->
 <section id="faq" class="py-5 bg-light">
+
   <div class="container">
+
     <h2 class="text-center">Preguntas Frecuentes</h2>
 
     <div class="mt-4">
+
       <p><strong>¿Tiene costo?</strong><br>Inicialmente es gratuito.</p>
-      <p><strong>¿Sirve para principiantes?</strong><br>Sí, explicamos todo fácil.</p>
-      <p><strong>¿Cuánto tarda?</strong><br>Menos de 24 horas.</p>
+
+      <p><strong>¿Sirve para principiantes?</strong><br>
+      Sí, explicamos todo fácil.</p>
+
+      <p><strong>¿Cuánto tarda?</strong><br>
+      Menos de 24 horas.</p>
+
     </div>
+
   </div>
+
 </section>
 
 <!-- FORMULARIO -->
+<section class="py-5 text-center bg-dark text-white">
 
-<form id="subscribeForm" class="py-5 text-center">
+  <div class="container">
 
-<input 
-type="email" 
-id="email" 
-placeholder="Ingresa tu correo"
-required
->
+    <h2>Únete a TechNiche</h2>
 
-<button type="submit">
-Suscribirme
-</button>
+    <p>Recibe noticias y contenido exclusivo</p>
 
-</form>
+    <form id="subscribeForm" class="mt-4">
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Ingresa tu correo"
+        required
+        class="form-control w-50 mx-auto mb-3"
+      >
+
+      <button type="submit" class="btn btn-primary px-4">
+        Suscribirme
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
 <!-- PRE FOOTER -->
 <section class="bg-light py-5 border-top">
-  <div class="container text-center">
-    <h3>¿Listo para mejorar tu setup?</h3>
-    <p class="mb-4">Recibe recomendaciones personalizadas y optimiza tu experiencia tecnológica.</p>
 
-    <a href="#formulario" 
-        class="btn btn-primary m-2"
-        onclick="dataLayer.push({event:'cta_click'});">
-          Empezar ahora
+  <div class="container text-center">
+
+    <h3>¿Listo para mejorar tu setup?</h3>
+
+    <p class="mb-4">
+      Recibe recomendaciones personalizadas y optimiza tu experiencia tecnológica.
+    </p>
+
+    <a href="#subscribeForm"
+      class="btn btn-primary m-2"
+      onclick="dataLayer.push({event:'cta_click'});">
+
+      Empezar ahora
+
     </a>
 
     <a href="#beneficios" class="btn btn-outline-dark">
       Ver beneficios
     </a>
 
-    <div class="mt-4">
-      <small class="text-muted">
-        Respuesta en menos de 24 horas • Asesoría gratuita • Sin compromiso
-      </small>
-    </div>
   </div>
-</section>
-
 
 </section>
 
@@ -235,54 +301,65 @@ Suscribirme
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Scroll Navbar -->
+<!-- Navbar Scroll -->
 <script>
 window.addEventListener("scroll", function(){
+
   const navbar = document.querySelector(".navbar");
+
   if(window.scrollY > 50){
     navbar.classList.add("scrolled");
-  } else {
+  }else{
     navbar.classList.remove("scrolled");
   }
+
 });
 </script>
-<!--scroll_50-->
+
+<!-- Scroll 50 -->
 <script>
 let scroll50 = false;
 
 window.addEventListener('scroll', function() {
-  if (!scroll50 && (window.scrollY + window.innerHeight) / document.body.scrollHeight > 0.5) {
+
+  if (!scroll50 &&
+      (window.scrollY + window.innerHeight) / document.body.scrollHeight > 0.5) {
+
     scroll50 = true;
+
     dataLayer.push({
       event: 'scroll_50'
     });
+
   }
+
 });
 </script>
-<!--form_view-->
+
+<!-- Form View -->
 <script>
-const form = document.querySelector("#formulario");
+
+const form = document.querySelector("#subscribeForm");
 
 window.addEventListener("scroll", function(){
+
+  if(!form) return;
+
   const rect = form.getBoundingClientRect();
 
   if(rect.top < window.innerHeight && rect.bottom >= 0){
+
     dataLayer.push({
       event: "form_view"
     });
+
   }
+
 });
+
 </script>
-<!--form_submit-->
-<script>
-window.addEventListener("message", function(event) {
-  if(event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
-    dataLayer.push({
-      event: "form_submit"
-    });
-  }
-});
-</script>
+
+<!-- EMAILJS -->
 <script>
 
 emailjs.init("pVac4ewmRWgUNOSgF");
@@ -290,29 +367,37 @@ emailjs.init("pVac4ewmRWgUNOSgF");
 document.getElementById("subscribeForm")
 .addEventListener("submit", function(e){
 
-e.preventDefault();
+  e.preventDefault();
 
-const email = document.getElementById("email").value;
+  const email = document.getElementById("email").value;
 
-emailjs.send("service_rfm4co1","template_uzrar5r",{
-    user_email: email
-})
-.then(() => {
+  emailjs.send("service_rfm4co1","template_uzrar5r",{
+      user_email: email
+  })
 
-    alert("¡Suscripción exitosa!");
+  .then(() => {
 
-    document.getElementById("subscribeForm").reset();
+      alert("¡Suscripción exitosa!");
 
-})
-.catch((error)=>{
-    console.log(error);
-    alert("Error al enviar");
-});
+      document.getElementById("subscribeForm").reset();
+
+      dataLayer.push({
+        event: "form_submit"
+      });
+
+  })
+
+  .catch((error)=>{
+
+      console.log(error);
+
+      alert("Error al enviar");
+
+  });
 
 });
 
 </script>
-
 
 </body>
 </html>
