@@ -31,6 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 </head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 
 
@@ -184,15 +185,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- FORMULARIO -->
-<section id="formulario" class="py-5 text-center">
-  <div class="container">
-    <h2>Empieza ahora</h2>
 
-<script src="https://js.hsforms.net/forms/embed/51290640.js" defer></script>
-<div class="hs-form-frame" data-region="na1" data-form-id="d174af82-e515-4ed0-8928-c320ac71abe3" data-portal-id="51290640"></div>
-  </div>
-</section>
+<form id="subscribeForm" class="py-5 text-center">
 
+<input 
+type="email" 
+id="email" 
+placeholder="Ingresa tu correo"
+required
+>
+
+<button type="submit">
+Suscribirme
+</button>
+
+</form>
 <!-- PRE FOOTER -->
 <section class="bg-light py-5 border-top">
   <div class="container text-center">
@@ -275,6 +282,35 @@ window.addEventListener("message", function(event) {
     });
   }
 });
+</script>
+<script>
+
+emailjs.init("pVac4ewmRWgUNOSgF");
+
+document.getElementById("subscribeForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const email = document.getElementById("email").value;
+
+emailjs.send("service_rfm4co1","template_uzrar5r",{
+    user_email: email
+})
+.then(() => {
+
+    alert("¡Suscripción exitosa!");
+
+    document.getElementById("subscribeForm").reset();
+
+})
+.catch((error)=>{
+    console.log(error);
+    alert("Error al enviar");
+});
+
+});
+
 </script>
 
 
