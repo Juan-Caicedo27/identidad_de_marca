@@ -1,8 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
   <meta charset="UTF-8">
-  <title>TechNiche - Landing</title>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>TechNiche | Soluciones Tecnológicas y Setup Gamer</title>
+
+  <meta name="description"
+  content="TechNiche ofrece asesoría tecnológica, recomendaciones gamer y soluciones digitales para optimizar tu setup y ahorrar dinero.">
+
+  <meta name="keywords"
+  content="setup gamer, tecnología, asesoría tecnológica, PC gamer, hardware, desarrollo web">
+
+  <meta name="author"
+  content="TechNiche">
+
+  <link rel="canonical"
+  href="https://technichelanding.netlify.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:title"
+  content="TechNiche">
+
+  <meta property="og:description"
+  content="Optimiza tu setup gamer con asesoría tecnológica experta">
+
+  <meta property="og:type"
+  content="website">
+
+  <meta property="og:url"
+  content="https://technichelanding.netlify.app/">
+
+  <!-- Favicon -->
+  <link rel="icon"
+  type="image/png"
+  href="img/tech.webp">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect"
+  href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin>
+
+  <!-- Bootstrap -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+
+  <!-- Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+  rel="stylesheet">
+
+  <!-- Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+  href="css/styles.css">
+
+  <!-- EmailJS -->
+  <script
+  defer
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <!-- Google Tag Manager -->
   <script>
@@ -10,33 +78,16 @@
     w[l]=w[l]||[];
     w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
     var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j=d.createElement(s),
+    dl=l!='dataLayer'?'&l='+l:'';
+
     j.async=true;
     j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+
     f.parentNode.insertBefore(j,f);
+
   })(window,document,'script','dataLayer','GTM-PXQ59QSK');
   </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="img/tech.png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-  <!-- CSS propio -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
 
@@ -54,7 +105,7 @@
   <div class="container">
 
     <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-      <img src="img/tech.png" alt="Logo TechNiche" width="35" class="me-2">
+      <img src="img/tech.webp" alt="Logo TechNiche" loading="lazy" width="35" class="me-2">
       TechNiche
     </a>
 
@@ -248,19 +299,33 @@
 
     <form id="subscribeForm" class="mt-4">
 
-      <input
-        type="email"
-        id="email"
-        placeholder="Ingresa tu correo"
-        required
-        class="form-control w-50 mx-auto mb-3"
-      >
+  <label
+    for="email"
+    class="form-label">
 
-      <button type="submit" class="btn btn-primary px-4">
-        Suscribirme
-      </button>
+    Correo electrónico
 
-    </form>
+  </label>
+
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Ingresa tu correo"
+    required
+    aria-label="Correo electrónico"
+    class="form-control w-50 mx-auto mb-3"
+  >
+
+  <button
+    type="submit"
+    class="btn btn-primary px-4">
+
+    Suscribirme
+
+  </button>
+
+</form>
 
   </div>
 
@@ -299,7 +364,9 @@
 </footer>
 
 <!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script
+defer
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Navbar Scroll -->
 <script>
